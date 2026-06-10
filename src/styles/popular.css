@@ -1,0 +1,107 @@
+#popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 4rem;
+  gap: 3.5rem;
+}
+
+#popular header {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  max-width: 33rem;
+}
+
+#popular header p {
+  color: var(--second-text-color);
+}
+
+#popular .even-columns {
+  width: 100%;
+  gap: 2rem;
+}
+
+.vinyl-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(26, 26, 26, 0.06) 0px 4px 16px;
+  color: var(--text-color);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vinyl-card:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(123, 30, 46, 0.18) 0px 12px 28px;
+}
+
+.vinyl-art {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--bg-color);
+}
+
+.vinyl-art img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.vinyl-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.vinyl-card h3 {
+  font-size: 1.15rem;
+}
+
+.vinyl-artist {
+  color: var(--second-text-color);
+  font-size: var(--fs-sm);
+}
+
+.vinyl-price {
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  margin-top: 0.25rem;
+}
+
+.vinyl-buy {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  background: var(--primary-color);
+  color: var(--light-text-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  padding-block: 0.7rem;
+  border-radius: 0.4rem;
+  border: solid transparent 0.15rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.vinyl-card:hover .vinyl-buy {
+  background: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+@media (width >= 1280px) {
+  #popular {
+    padding-block: 6rem;
+  }
+}
