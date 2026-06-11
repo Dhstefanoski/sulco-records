@@ -10,6 +10,7 @@ import VinylCard from "../components/VinylCard";
 import TestimonialCard from "../components/TestimonialCard";
 import ContactForm from "../components/ContactForm";
 import LoginModal from "../components/LoginModal";
+import Footer from "../components/Footer";
 import Curation from "../assets/curation.svg";
 import Vinyl from "../assets/vinyl.svg";
 import Package from "../assets/package.svg";
@@ -352,6 +353,8 @@ export default function Home() {
                 </header>
                 <ContactForm />
             </section>
+
+            <Footer />
 
             {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
         </>
